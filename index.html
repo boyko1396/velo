@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Velohack</title><link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/styles.css?v=289453463477"/>
+  </head>
+  <body>
+    <div id="root">
+      <main class="main" role="main">
+        <div class="main__attention"></div>
+        <div class="bg-el">
+          <div class="bg-el__item bg-el__item--1">
+            <div class="bg-el__item-img bg-el__item-img--1"></div>
+          </div>
+          <div class="bg-el__item bg-el__item--2">
+            <div class="bg-el__item-img bg-el__item-img--2"></div>
+          </div>
+          <div class="bg-el__item bg-el__item--3">
+            <div class="bg-el__item-img bg-el__item-img--3"></div>
+          </div>
+          <div class="bg-el__item bg-el__item--4">
+            <div class="bg-el__item-img bg-el__item-img--4"></div>
+          </div>
+        </div>
+        <header class="main__header">
+          <div class="main__header-aside"><a class="d-sm-none logo main__header-logo" href="/"><img class="logo__img" src="images/logo.svg" alt="velohack.com" width="120" height="80"/></a><a class="d-sm-block logo main__header-logo" href="/"><img class="logo__img" src="images/logo-row-1.svg" alt="velohack.com" width="190" height="54"/></a></div>
+          <div class="main__header-content">
+            <div class="main__header-content-security"><img src="images/icon/guard-type-1.svg" alt="9 лет на защите ваших данных"/><span>9 лет на защите ваших данных</span></div>
+          </div>
+        </header>
+        <div class="main__inner">
+          <aside class="aside main__aside">
+            <div class="aside__inner">
+              <div class="aside__slide">
+                <h2 class="aside__title">Проверьте безопасность ваших данных</h2>
+                <div class="content aside__text">
+                  <p>Из-за недавнего инцидента с Твиттером, есть риск, что ваши данные могут быть использованы в корыстных целях. Наш антивирус выпустил обновление, которое защищает вас от подобного<br><a href="#">Подробнее на первоисточнике</a></p>
+                </div>
+                <div class="js-faq-toggle aside__faq">
+                  <picture class="aside__faq-picture"><img src="images/icon/faq-aside.svg" alt="Защити себя и своих близких"/></picture>
+                  <div class="aside__faq-text">Защити себя и своих близких</div>
+                </div>
+                <div class="aside__form-desc">Быстрая проверка данных <span>(бесплатно)</span></div>
+                <form class="aside__form" action="#">
+                  <input class="u-input u-input--size-md u-input--theme-gray aside__form-input" type="email" name="email" required="required" placeholder="Email.."/>
+                  <button class="js-step-1 btn btn--size-md btn--theme-green aside__form-btn" type="button"><span class="btn__inner"><span class="btn__title">Начать проверку</span></span></button>
+                </form>
+                <footer class="aside__footer">Проверка займет не более 10 секунд</footer>
+              </div>
+              <div class="aside__slide">
+                <div class="aside__check">
+                  <h2 class="aside__title">Введите код полученный с Email</h2>
+                  <form class="aside__form" action="#">
+                    <input class="u-input u-input--size-md u-input--theme-gray aside__form-input" type="text" name="code" required="required" placeholder=".."/>
+                    <button class="js-progress-hook btn btn--size-md btn--theme-green aside__form-btn" type="button"><span class="btn__inner"><span class="btn__title">Запустить проверку</span></span></button>
+                  </form>
+                  <footer class="aside__footer">Проверка займет не более 10 секунд</footer>
+                </div>
+              </div>
+              <div class="aside__slide">
+                <div class="aside__progress">
+                  <h2 class="aside__title">Проверка займет не более 10 секунд</h2>
+                  <div class="u-progress">
+                    <div class="u-progress__line">Идет проверка<span class="js-progress u-progress__line-current"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="main__content">
+            <div class="main__content-faq">
+              <div class="main__content-faq-header">
+                <button class="js-faq-toggle main__content-faq-header-toggle" type="button">Свернуть</button>
+                <div class="main__content-faq-header-content">Весь спектр защиты ваших устройств от мошенников</div>
+                <picture class="main__content-faq-header-picture"><img src="images/main-faq-img.png" alt="Весь спектр защиты ваших устройств от мошенников"/></picture>
+              </div>
+              <div class="main__content-faq-list">
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Защита от мошеников и вымогателей</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Удалить всю чуствительную информацию в интернете</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Управление своими персональными данными</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Запретить сбор информации по себе в будущем</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Скрыть возможность установления ваших родственников/друзей</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Чек-лист сервисов, регулярно сливающих персональные данные Создание выдуманной личности для публичной работы в сети</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Защита от мошеников и вымогателей</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Создание виртуальных: разовых телефонов, почтовых адресов, карт оплаты</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Личная безопасность и анонимность в интеренете как у международных Хакеров</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Самые надежные практики, инстурменты и программы 2023 года</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Управление репутацией в интернете</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Как удалить информацию о себе в телеграм каналах/телеграф сайтах</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__result">
+          <div class="main__result-inner">
+            <div class="main__result-error"><img class="main__result-error-icon" src="images/icon/guard-type-2.svg"/>
+              <div class="main__result-error-content">
+                <div class="title-size-2 main__result-error-title">Ваши данные не защищены</div>
+                <div class="main__result-error-text">Успейте защитить ваши данные. Подробности&nbsp;отправили вам на почту: <strong>kostik@gmail.com</strong></div>
+              </div>
+            </div>
+            <div class="main__result-user">
+              <nav class="main__result-user-nav">
+                <ul>
+                  <li><a class="is-active" href="#layout-target-1">Личные данные</a></li>
+                  <li><a href="#layout-target-2">Файлы</a></li>
+                  <li><a href="#layout-target-3">Перемещения</a></li>
+                </ul>
+              </nav><a class="main__result-user-help" href="#layout-target-4"><img class="main__result-user-help-icon" src="images/icon/help.svg"/><span class="main__result-user-help-title">Как мы вас защитим</span></a>
+            </div>
+            <div class="layout main__result-layout">
+              <div class="layout__result">
+                <div class="layout__result-content" id="layout-target-1">
+                  <header class="layout__result-content-header">
+                    <h2 class="layout__result-content-header-title">Найдены личные данные</h2>
+                    <div class="layout__result-content-header-activity">Активность не позднее:&nbsp;<strong>24.06.2023</strong></div>
+                  </header>
+                  <div class="layout__result-content-list">
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Ваша ФИО:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">Константинов</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">Константин</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">Константинопольский</span></div>
+                        </div>
+                        <div class="dropdown-block dropdown-block--theme-baidge is-active line-info__similar-name">
+                          <div class="dropdown-block__inner">
+                            <header class="dropdown-block__header">
+                              <div class="dropdown-block__header-title">Связаны с именем (7)</div>
+                              <button class="js-dropdown-block-btn dropdown-block__header-btn" type="button"><span class="dropdown-block__header-btn-title" data-title-active="Свернуть" data-title-normal="Развернуть"></span><img class="dropdown-block__header-btn-icon" src="images/icon/arrow-type-1.svg"/></button>
+                            </header>
+                            <div class="dropdown-block__content">
+                              <div class="line-info">
+                                <div class="line-info__body">
+                                  <div class="line-info__list">
+                                    <div class="info-badge info-badge--theme-gray-light line-info__list-item"><span class="info-badge__title">Максим</span></div>
+                                    <div class="info-badge info-badge--theme-gray-light line-info__list-item"><span class="info-badge__title">Okeymaxim</span></div>
+                                    <div class="info-badge info-badge--theme-gray-light line-info__list-item"><span class="info-badge__title">Макс Березин</span></div>
+                                    <div class="info-badge info-badge--theme-gray-light line-info__list-item"><span class="info-badge__title">Ханова Александра</span></div>
+                                    <div class="info-badge info-badge--theme-gray-light line-info__list-item"><span class="info-badge__title">березин Максим</span></div>
+                                    <div class="info-badge info-badge--theme-gray-light line-info__list-item"><span class="info-badge__title">Ханова Александра Сергеевна</span></div>
+                                    <div class="info-badge info-badge--theme-gray-light line-info__list-item"><span class="info-badge__title">Березин Макси</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Паспорт:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__suptitle">Серия:</span><span class="info-badge__title">42 33</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__suptitle">Номер:</span><span class="info-badge__title">837 281</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Телефон:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__suptitle">Оператор (Йота):</span><span class="info-badge__title">+79990592985</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__suptitle">Паспорт:</span><span class="info-badge__title">42-33 837281</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Соц. сети:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-instagram line-info__list-item"><img class="info-badge__icon" src="images/icon/instagram.svg"/><span class="info-badge__suptitle">Max:</span><span class="info-badge__title">@okeymaxim</span></div>
+                          <div class="info-badge info-badge--theme-telegram line-info__list-item"><img class="info-badge__icon" src="images/icon/telegram.svg"/><span class="info-badge__suptitle">ID 338920713:</span><span class="info-badge__title">@Okeymaxim</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__suptitle">Паспорт:</span><span class="info-badge__title">42-33 837281</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Посещает:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-youtube line-info__list-item"><img class="info-badge__icon" src="images/icon/youtube.svg"/><span class="info-badge__title">@Okeymaxim</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">Photos Maps</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Объявлений:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">3 шт.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layout__result-content-media" id="layout-target-2">
+                    <div class="layout__result-content-media-header">
+                      <div class="layout__result-content-media-header-el">
+                        <h2 class="layout__result-content-media-header-el-title">Файлы</h2>
+                        <div class="layout__result-content-media-header-el-list">
+                          <div class="line-info layout__result-content-media-header-el-list-item">
+                            <div class="line-info__body">
+                              <div class="line-info__list">
+                                <div class="info-badge info-badge--theme-outline line-info__list-item"><img class="info-badge__icon" src="images/icon/picture.svg"/><span class="info-badge__title">5 938</span></div>
+                                <div class="info-badge info-badge--theme-outline line-info__list-item"><img class="info-badge__icon" src="images/icon/video-play.svg"/><span class="info-badge__title">349</span></div>
+                                <div class="info-badge info-badge--theme-outline line-info__list-item"><img class="info-badge__icon" src="images/icon/file-search-alt.svg"/><span class="info-badge__title">1 293</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--size-xs btn--theme-blue layout__result-content-media-header-btn-download" href="#"><span class="btn__inner"><img class="btn__icon btn__icon--rtl" src="images/icon/download-filled.svg"/><span class="btn__title">Скачать все (15гб)</span></span></a>
+                    </div>
+                    <div class="layout__result-content-media-row">
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-1.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-2.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-3.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-4.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-5.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-6.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-7.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-8.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-9.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-10.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-11.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-12.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-13.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-14.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-15.jpg"/></div>
+                      </div>
+                      <div class="layout__result-content-media-row-col">
+                        <div class="media-card media-card--blur"><img src="images/media-card-16.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="layout__result-content-title" id="layout-target-3">Перемещения</h2>
+                  <div class="layout__result-content-list">
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Страна:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">RU</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__suptitle">Страна:</span><span class="info-badge__title">Россия</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">Приморский край</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line-info layout__result-content-list-line">
+                      <div class="line-info__title">Возможные адреса:</div>
+                      <div class="line-info__body">
+                        <div class="line-info__list">
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__suptitle">Страна:</span><span class="info-badge__title">Россия</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">Краснодарский край</span></div>
+                          <div class="info-badge info-badge--theme-fill line-info__list-item"><span class="info-badge__title">Краснодар</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <article class="course-card main__result-course-card" id="layout-target-4">
+              <picture class="d-md-none course-card__picture"><img src="images/course-card-1.jpg" alt="Защити себя и своих близких"/></picture>
+              <picture class="d-md-block course-card__picture"><img src="images/course-card-1-mobile.jpg" alt="Защити себя и своих близких"/></picture>
+              <div class="course-card__inner">
+                <div class="course-card__header">
+                  <div class="course-card__header-content">
+                    <h3 class="title-size-2 course-card__header-content-title">Защити себя и своих близких</h3>
+                    <p class="course-card__header-content-desc">Самый полный курс по защите от мошенничества и вымогателей в интернете</p>
+                  </div>
+                  <div class="d-sm-none course-card__gift">
+                    <div class="course-card__gift-title">Получите<br>бесплатный<br>антивирус</div><img class="course-card__gift-icon" src="images/gift.svg"/>
+                  </div>
+                </div>
+                <div class="course-card__footer">
+                  <div class="course-card__footer-left">
+                    <div class="course-card__footer-discount">
+                      <div class="course-card__footer-discount-title">Скидка</div>
+                      <div class="course-card__footer-discount-amount">-50%</div>
+                    </div>
+                    <div class="course-card__footer-counter">
+                      <div class="course-card__footer-counter-text"><span id="minutes">47</span><span>:</span><span id="seconds">31</span></div>
+                      <div class="course-card__footer-counter-line"></div>
+                    </div>
+                    <div class="d-sm-none course-card__footer-lessons">
+                      <div class="course-card__footer-lessons-title">Уроков</div>
+                      <div class="course-card__footer-lessons-amount">12</div>
+                    </div>
+                  </div>
+                  <div class="d-sm-block course-card__footer-middle">
+                    <div class="course-card__gift">
+                      <div class="course-card__gift-title">Получите бесплатный<br>антивирус</div><img class="course-card__gift-icon" src="images/gift.svg"/>
+                    </div>
+                    <div class="course-card__footer-lessons">
+                      <div class="course-card__footer-lessons-title">Уроков</div>
+                      <div class="course-card__footer-lessons-amount">12</div>
+                    </div>
+                  </div><a class="btn btn--size-md btn--theme-green course-card__footer-btn" href="#"><span class="btn__inner"><span class="btn__title">Перейти к скачиванию</span></span></a>
+                </div>
+              </div>
+            </article>
+            <div class="main__content-faq main__result-faq">
+              <div class="main__content-faq-header">
+                <div class="main__content-faq-header-content">Весь спектр защиты ваших устройств от мошенников</div>
+                <picture class="main__content-faq-header-picture"><img src="images/main-faq-img.png" alt="Весь спектр защиты ваших устройств от мошенников"/></picture>
+              </div>
+              <div class="main__content-faq-list">
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Защита от мошеников и вымогателей</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Удалить всю чуствительную информацию в интернете</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Управление своими персональными данными</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Запретить сбор информации по себе в будущем</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Скрыть возможность установления ваших родственников/друзей</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Чек-лист сервисов, регулярно сливающих персональные данные Создание выдуманной личности для публичной работы в сети</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Защита от мошеников и вымогателей</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Создание виртуальных: разовых телефонов, почтовых адресов, карт оплаты</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Личная безопасность и анонимность в интеренете как у международных Хакеров</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Самые надежные практики, инстурменты и программы 2023 года</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Управление репутацией в интернете</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+                <div class="main__content-faq-list-item">
+                  <button class="js-faq-item-toggle main__content-faq-list-item-toggle" type="button">
+                    <div class="main__content-faq-list-item-toggle-title">Как удалить информацию о себе в телеграм каналах/телеграф сайтах</div>
+                    <svg class="icon main__content-faq-list-item-toggle-icon">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="content main__content-faq-list-item-content">
+                    <p>Путем предоставления пользователю инструментов и настроек для управления своей цифровой приватностью, этот сервис обеспечивает непрерывную защиту персональных данных и предотвращает их несанкционированное использование или распространение. Отказ от сбора информации может помочь пользователям избежать назойливой рекламы, персонализированного мониторинга и возможных утечек данных, обеспечивая им большую конфиденциальность и контроль над своей цифровой жизнью.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="main__result-footer" id="layout-target-5">
+              <header class="main__result-header"><img class="main__result-header-icon" src="images/icon/guard-type-5.svg"/>
+                <div class="main__result-header-sup">
+                  <h2 class="title-size-1 main__result-header-sup-title">9 лет на защите ваших&nbsp;данных</h2>
+                </div>
+              </header>
+              <div class="main__result-footer-inner">
+                <div class="main__result-footer-list">
+                  <div class="info-badge info-badge--size-md info-badge--theme-green main__result-footer-list-item"><img class="info-badge__icon" src="images/icon/checked.svg"/><span class="info-badge__suptitle">Доступ ко всем вашим архивам, что есть по вас в сети</span></div>
+                  <div class="info-badge info-badge--size-md info-badge--theme-green main__result-footer-list-item"><img class="info-badge__icon" src="images/icon/checked.svg"/><span class="info-badge__suptitle">Очистка и невозможность сбора информации в дальнейшем</span></div>
+                  <div class="info-badge info-badge--size-md info-badge--theme-green main__result-footer-list-item"><img class="info-badge__icon" src="images/icon/checked.svg"/><span class="info-badge__suptitle">Курс по тотальной безопасности для себя и своих близких</span></div>
+                  <div class="info-badge info-badge--size-md info-badge--theme-green main__result-footer-list-item"><img class="info-badge__icon" src="images/icon/checked.svg"/><span class="info-badge__suptitle">Комплексная защита от интернет мошенников и вымогаталей</span></div>
+                </div>
+                <div class="main__result-footer-price">
+                  <div class="main__result-footer-price-card main__result-footer-price-card--theme-light-dark">
+                    <div class="main__result-footer-price-card-content">
+                      <div class="main__result-footer-price-card-suptitle">Стоимость</div>
+                      <div class="main__result-footer-price-card-title"><strong>100 000</strong> ₽</div>
+                    </div>
+                    <div class="main__result-footer-price-card-discount">
+                      <div class="color-white main__result-footer-price-card-suptitle"><img src="images/icon/gift.svg" alt="Ваша скидка"/>Ваша скидка</div>
+                      <div class="main__result-footer-price-card-title"><strong>- 50 000</strong> ₽</div>
+                    </div>
+                  </div>
+                  <div class="main__result-footer-price-card main__result-footer-price-card--theme-light-blue">
+                    <div class="main__result-footer-price-card-content">
+                      <div class="color-blue main__result-footer-price-card-suptitle">Итого:</div>
+                      <div class="main__result-footer-price-card-title"><strong>50 000</strong> ₽</div>
+                    </div>
+                    <button class="js-form-init btn btn--size-md btn--theme-blue main__result-footer-price-card-btn" type="button"><span class="btn__inner"><span class="btn__title">Перейти к оплате</span></span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="main__result-copyright">
+                <div class="main__result-copyright-guard"><img src="images/icon/guard-type-6.svg" alt="9 лет на защите ваших данных"/>9 лет на защите ваших данных</div><a class="logo logo--footer main__result-copyright-logo" href="/"><img class="logo__img" src="images/logo-row.svg" alt="velohack.com" width="" height=""/></a>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <div class="layout__protect"><a class="main__header-aside-identification" href="#">
+            <svg class="icon main__header-aside-identification-icon">
+              <use xlink:href="images/sprite.svg#arrow"></use>
+            </svg><span>Назад</span></a>
+          <div class="main__result-error"><img class="main__result-error-icon" src="images/icon/guard-type-2.svg"/>
+            <div class="main__result-error-content">
+              <div class="title-size-2 main__result-error-title">Ваши данные не защищены</div>
+              <div class="main__result-error-text">Успейте защитить ваши данные. Подробности&nbsp;отправили вам на почту: <strong>kostik@gmail.com</strong></div>
+            </div>
+          </div>
+          <div class="layout__protect-block">
+            <h2 class="layout__protect-title">Выберите способ оплаты</h2>
+            <div class="layout__protect-payments">
+              <div class="layout__protect-payments-content">
+                <div class="layout__protect-payments-list">
+                  <div class="layout__protect-payments-list-card">
+                    <label class="u-radio u-radio--visa u-radio--size-md u-radio--theme-gray">
+                      <input class="js-payment-method u-radio__control" type="radio" name="payments[]" checked="checked" value="payment-visa"/><span class="u-radio__icon"></span><span class="u-radio__title">VISA / Master</span><img class="u-radio__img u-radio__img--ltr" src="images/icon/type-payments-1.svg" alt="visa"/>
+                    </label>
+                  </div>
+                  <div class="layout__protect-payments-list-card">
+                    <label class="u-radio u-radio--bitcoin u-radio--size-md u-radio--theme-gray">
+                      <input class="js-payment-method u-radio__control" type="radio" name="payments[]" value="payment-bitcoin"/><span class="u-radio__icon"></span><span class="u-radio__title">Bitcoin</span><img class="u-radio__img u-radio__img--ltr" src="images/icon/type-payments-2.svg" alt="bitcoin"/>
+                    </label>
+                  </div>
+                  <div class="layout__protect-payments-list-card">
+                    <label class="u-radio u-radio--qiwi u-radio--size-md u-radio--theme-gray">
+                      <input class="js-payment-method u-radio__control" type="radio" name="payments[]" value="payment-qiwi"/><span class="u-radio__icon"></span><span class="u-radio__title">QIWI</span><img class="u-radio__img u-radio__img--ltr" src="images/icon/type-payments-3.svg" alt="qiwi"/>
+                    </label>
+                  </div>
+                  <div class="layout__protect-payments-list-card">
+                    <label class="u-radio u-radio--usdt u-radio--size-md u-radio--theme-gray">
+                      <input class="js-payment-method u-radio__control" type="radio" name="payments[]" value="payment-usdt"/><span class="u-radio__icon"></span><span class="u-radio__title">USDT</span><img class="u-radio__img u-radio__img--ltr" src="images/icon/type-payments-4.svg" alt="USDT"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="layout__protect-payments-aside">
+                <div class="layout__protect-payments-aside-header">
+                  <div class="layout__protect-payments-aside-header-title">Итого<br>к оплате:</div>
+                  <div class="layout__protect-payments-aside-header-amount">50 000 ₽</div>
+                </div>
+                <button class="js-btn-method btn btn--size-md btn--theme-green layout__protect-payments-btn" type="button"><span class="btn__inner"><span class="btn__title">Перейти к оплате</span></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="main__payments main__transfer-wrap">
+            <div class="main__payments main__payments--2" id="payment-visa">
+              <div class="main__payments-payment-method">
+                <div class="layout__transfer">
+                  <aside class="protect-aside layout__transfer-aside">
+                    <div class="protect-aside__body">
+                      <div class="protect-aside__inner protect-aside__inner--theme-blue"><img class="protect-aside__icon" src="images/icon/type-payments-1.svg"/>
+                        <div class="protect-aside__title"><strong>50 000 ₽</strong></div>
+                      </div>
+                    </div>
+                  </aside>
+                  <div class="layout__transfer-content">
+                    <h3 class="layout__transfer-title">Переведите $24 по реквизитам ниже</h3>
+                    <div class="content layout__transfer-text">
+                      <p>В течении часа мы проверим  ваш чек и вышлем на эл. почту ссылку на скачивание антивируса с последним обновлением</p>
+                    </div>
+                    <div class="layout__transfer-group">
+                      <button class="js-copy-trigger u-input-area u-input-area--size-sm u-input-area--theme-gray layout__transfer-group-input" type="button" data-copy-text="скопировано">4934 3233 2145 4312</button>
+                      <label class="btn btn--size-sm btn--theme-green layout__transfer-group-btn" for="download-receipt-1"><span class="btn__inner"><span class="btn__title">Загрузить чек</span></span></label>
+                      <input class="js-download-receipt-input u-file-el" type="file" name="file[]" id="download-receipt-1"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__payments main__payments--2" id="payment-bitcoin">
+              <div class="main__payments-payment-method">
+                <div class="layout__transfer">
+                  <aside class="protect-aside layout__transfer-aside">
+                    <div class="protect-aside__body">
+                      <div class="protect-aside__inner protect-aside__inner--theme-yellow"><img class="protect-aside__icon" src="images/icon/type-payments-2.svg"/>
+                        <div class="protect-aside__title"><strong>50 000 ₽</strong></div>
+                      </div>
+                    </div>
+                  </aside>
+                  <div class="layout__transfer-content">
+                    <h3 class="layout__transfer-title">Переведите 0.0011 BTC по реквизитам ниже</h3>
+                    <div class="content layout__transfer-text">
+                      <p>В течении часа мы проверим  ваш чек и вышлем на эл. почту ссылку на скачивание антивируса с последним обновлением</p>
+                    </div>
+                    <div class="layout__transfer-group">
+                      <button class="js-copy-trigger u-input-area u-input-area--size-sm u-input-area--theme-gray layout__transfer-group-input" type="button" data-copy-text="скопировано">MNV7DK48VNEDKFEO04IG3U9G8JRO3NG43T4GN</button>
+                      <label class="btn btn--size-sm btn--theme-green layout__transfer-group-btn" for="download-receipt-2"><span class="btn__inner"><span class="btn__title">Загрузить чек</span></span></label>
+                      <input class="js-download-receipt-input u-file-el" type="file" name="file[]" id="download-receipt-2"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__payments main__payments--2" id="payment-qiwi">
+              <div class="main__payments-payment-method">
+                <div class="layout__transfer">
+                  <aside class="protect-aside layout__transfer-aside">
+                    <div class="protect-aside__body">
+                      <div class="protect-aside__inner protect-aside__inner--theme-yellow"><img class="protect-aside__icon" src="images/icon/type-payments-3.svg"/>
+                        <div class="protect-aside__title"><strong>50 000 ₽</strong></div>
+                      </div>
+                    </div>
+                  </aside>
+                  <div class="layout__transfer-content">
+                    <h3 class="layout__transfer-title">Переведите $24 по указанным реквизитам ниже</h3>
+                    <div class="content layout__transfer-text">
+                      <p>В течении часа мы проверим  ваш чек и вышлем на эл. почту ссылку на скачивание антивируса с последним обновлением</p>
+                    </div>
+                    <div class="layout__transfer-group">
+                      <button class="js-copy-trigger u-input-area u-input-area--size-sm u-input-area--theme-gray layout__transfer-group-input" type="button" data-copy-text="скопировано">+79990592985</button>
+                      <label class="btn btn--size-sm btn--theme-green layout__transfer-group-btn" for="download-receipt-3"><span class="btn__inner"><span class="btn__title">Загрузить чек</span></span></label>
+                      <input class="js-download-receipt-input u-file-el" type="file" name="file[]" id="download-receipt-3"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__payments main__payments--2" id="payment-usdt">
+              <div class="main__payments-payment-method">
+                <div class="layout__transfer">
+                  <aside class="protect-aside layout__transfer-aside">
+                    <div class="protect-aside__body">
+                      <div class="protect-aside__inner protect-aside__inner--theme-green"><img class="protect-aside__icon" src="images/icon/type-payments-4.svg"/>
+                        <div class="protect-aside__title"><strong>50 000 ₽</strong></div>
+                      </div>
+                    </div>
+                  </aside>
+                  <div class="layout__transfer-content">
+                    <h3 class="layout__transfer-title">Переведите 0.0011 BTC по реквизитам ниже</h3>
+                    <div class="content layout__transfer-text">
+                      <p>В течении часа мы проверим  ваш чек и вышлем на эл. почту ссылку на скачивание антивируса с последним обновлением</p>
+                    </div>
+                    <div class="layout__transfer-group">
+                      <button class="js-copy-trigger u-input-area u-input-area--size-sm u-input-area--theme-gray layout__transfer-group-input" type="button" data-copy-text="скопировано">+79990592985</button>
+                      <label class="btn btn--size-sm btn--theme-green layout__transfer-group-btn" for="download-receipt-4"><span class="btn__inner"><span class="btn__title">Загрузить чек</span></span></label>
+                      <input class="js-download-receipt-input u-file-el" type="file" name="file[]" id="download-receipt-4"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__success">
+          <div class="main__success-content"><img class="main__success-icon" src="images/icon/guard-type-7.svg"/>
+            <div class="main__success-text">После подтверждения оплаты, мы вышлем вам на эл. почту ссылку на скачивание :)</div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/jquery-3.6.0.min.js?v=289453463477"></script>
+    <script src="js/main.js?v=289453463477"></script>
+  </body>
+</html>
